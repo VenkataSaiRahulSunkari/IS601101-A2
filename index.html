@@ -3,30 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 2</title>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="title">
-        <div class="title">
+    <section id="layout title text-center">
+        <div class="title text-center font-roboto penumbra">
             <h1>Assignment 2</h1>
         </div>
     </section>
-    <div class="questions">
-        <section id="reverseString">
-            <div class="container">
-                <h2>Reverse String</h2></div>
+    <div class="layout font-quicksand umbra">
+        <section id="reverseString" class="question">
+            <div class="text-center container">
+                <h2>Reverse String</h2>
+                <div>
+                    <form>
+                        <input type="text" placeholder="Enter your string" id="reverseStringInput">
+                        <button type="button" onclick="reverseStringDisplay()">Reverse String</button>
+                    </form>
+                    <p>Reversed string is:</p>
+                </div>
+                <p id="reverseStringOutput"></p>
             </div>
         </section>
-        <section id="palindrome">
-            <div class="container">
+        <section id="palindrome" class="question">
+            <div class="text-center container">
                 <h2>Palindrome</h2>
+                <div>
+                    <form>
+                        <input type="number" placeholder="Enter your number" id="checkPalindromeInput">
+                        <button type="button" onclick="checkPalindromeOutput()">Check Palindrome</button>
+                    </form>
+                </div>
+                <p id="checkPalindromeOutput"></p>
             </div>
         </section>
-        <section id="bill">
-            <div class="container">
+        <section id="bill" class="question">
+            <div class="text-center container">
                 <h2>Bill Total</h2>
+                <div>
+                    <form name="bill">
+                        <input type="text" placeholder="Enter subtotal amount" id="subTotalInput">
+                        <input type="text" placeholder="Enter tip percentage" id="tipInput">
+                        <button type="button" onclick="return calcSubTotalBill()">Total Bill</button>
+                    </form>
+                </div>
+                <p id="subTotalOutput"></p>
             </div>
         </section>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
