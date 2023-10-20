@@ -35,7 +35,7 @@ function totalBill(subtotal, tip) {
 function reverseStringDisplay() {
     let input = document.getElementById("reverseStringInput").value;
     let result = reverseString(input);
-    document.getElementById("reverseStringOutput").innerHTML = result;
+    document.getElementById("reverseStringOutput").innerHTML = "Reversed string is: " + result;
 }
 
 function checkPalindromeOutput() {
@@ -48,5 +48,5 @@ function calcSubTotalBill() {
     let subtotal = document.forms["bill"]["subTotalInput"].value;
     let tip = document.forms["bill"]["tipInput"].value;
     let result = totalBill(subtotal, tip);
-    document.getElementById("subTotalOutput").innerHTML = "Total bill including the tip is:" + result;
+    document.getElementById("subTotalOutput").innerHTML = "Total bill including the tip is: " + result;
 }

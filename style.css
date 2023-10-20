@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .text-center {
     text-align: center;
 }
@@ -30,8 +31,23 @@ body {
     background-color: #F5F5F5;
 }
 
+.light-font {
+    color: #F5F5F5;
+}
+
+.page {
+    width: auto;
+    height: 100%;
+    background-color: #F5F5F5;
+}
+
+.fields {
+    padding-top: 10rem;
+}
+
 .layout {
     width: 100%;
+    height: 60vh;
   
     display: grid;
     grid-template-rows: 1fr;
@@ -42,15 +58,23 @@ body {
     align-items: center;
 }
 
-h1,h2 {
-    padding: 5%;
+h1 {
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 
 .title {
-    color: #F5F5F5;
+    color: #363062;
 }
 
 .container {
     vertical-align: top;
+}
+
+button:hover {
+    transform: scale(1.02);
+    transition-duration: 0.3s;
+    color: #363062;
+    background-color: #F99417;
 }

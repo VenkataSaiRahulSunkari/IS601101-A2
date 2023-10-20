@@ -10,51 +10,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="layout title text-center">
-        <div class="title text-center font-roboto penumbra">
-            <h1>Assignment 2</h1>
+    <section class="page">
+        <section id="title">
+            <div class="title text-center font-roboto shadow">
+                <h1>Assignment 2</h1>
+            </div>
+        </section>
+        <div class="layout font-quicksand umbra">
+            <section id="reverseString" class="question">
+                <div class="text-center container">
+                    <h2 class="penumbra light-font">Reverse String</h2>
+                    <div class="fields">
+                        <form>
+                            <input type="text" placeholder="Enter your string" id="reverseStringInput">
+                            <button type="button" onclick="reverseStringDisplay()">Reverse String</button>
+                        </form>
+                    </div>
+                    <p id="reverseStringOutput"></p>
+                </div>
+            </section>
+            <section id="palindrome" class="question">
+                <div class="text-center container">
+                    <h2 class="penumbra light-font">Palindrome</h2>
+                    <div class="fields">
+                        <form>
+                            <input type="number" placeholder="Enter your number" id="checkPalindromeInput">
+                            <button type="button" onclick="checkPalindromeOutput()">Check Palindrome</button>
+                        </form>
+                    </div>
+                    <p id="checkPalindromeOutput"></p>
+                </div>
+            </section>
+            <section id="bill" class="question">
+                <div class="text-center container">
+                    <h2 class="penumbra light-font">Bill Total</h2>
+                    <div class="fields">
+                        <form name="bill">
+                            <input type="text" placeholder="Enter subtotal amount" id="subTotalInput">
+                            <input type="text" placeholder="Enter tip percentage" id="tipInput">
+                            <button type="button" onclick="return calcSubTotalBill()">Total Bill</button>
+                        </form>
+                    </div>
+                    <p id="subTotalOutput"></p>
+                </div>
+            </section>
         </div>
     </section>
-    <div class="layout font-quicksand umbra">
-        <section id="reverseString" class="question">
-            <div class="text-center container">
-                <h2>Reverse String</h2>
-                <div>
-                    <form>
-                        <input type="text" placeholder="Enter your string" id="reverseStringInput">
-                        <button type="button" onclick="reverseStringDisplay()">Reverse String</button>
-                    </form>
-                    <p>Reversed string is:</p>
-                </div>
-                <p id="reverseStringOutput"></p>
-            </div>
-        </section>
-        <section id="palindrome" class="question">
-            <div class="text-center container">
-                <h2>Palindrome</h2>
-                <div>
-                    <form>
-                        <input type="number" placeholder="Enter your number" id="checkPalindromeInput">
-                        <button type="button" onclick="checkPalindromeOutput()">Check Palindrome</button>
-                    </form>
-                </div>
-                <p id="checkPalindromeOutput"></p>
-            </div>
-        </section>
-        <section id="bill" class="question">
-            <div class="text-center container">
-                <h2>Bill Total</h2>
-                <div>
-                    <form name="bill">
-                        <input type="text" placeholder="Enter subtotal amount" id="subTotalInput">
-                        <input type="text" placeholder="Enter tip percentage" id="tipInput">
-                        <button type="button" onclick="return calcSubTotalBill()">Total Bill</button>
-                    </form>
-                </div>
-                <p id="subTotalOutput"></p>
-            </div>
-        </section>
-    </div>
     <script src="index.js"></script>
 </body>
 </html>
