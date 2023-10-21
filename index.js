@@ -64,7 +64,7 @@ function checkPalindrome(input) {
 }
 
 function checkPalindromeOutput() {
-    let input = document.getElementById("checkPalindromeInput").value;
+    let input = parseInt(document.getElementById("checkPalindromeInput").value);
     let result = checkPalindrome(input);
     document.getElementById("checkPalindromeOutput").innerHTML = result;
 }
