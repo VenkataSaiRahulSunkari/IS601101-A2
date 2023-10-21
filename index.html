@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 2</title>
+    <title>Assignment_2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id=""
+    <section class="page">
+        <section id="title">
+            <div class="title text-center font-roboto shadow">
+                <h1>ASSIGNMENT 2</h1>
+            </div>
+        </section>
+        <div class="layout font-quicksand umbra">
+            <section id="reverseString" class="question">
+                <div class="text-center container">
+                    <h2 class="penumbra light-font">Reverse String</h2>
+                    <div class="fields">
+                        <form>
+                            <input type="text" placeholder="Enter your string" id="reverseStringInput">
+                            <button type="button" id="reverseStringBtn" onclick="reverseStringDisplay()">Reverse String</button>
+                        </form>
+                    </div>
+                    <p id="reverseStringOutput" class="scriptOutput"></p>
+                </div>
+            </section>
+            <section id="palindrome" class="question">
+                <div class="text-center container">
+                    <h2 class="penumbra light-font">Palindrome</h2>
+                    <div class="fields">
+                        <form>
+                            <input type="number" placeholder="Enter your number" id="checkPalindromeInput">
+                            <button type="button" id="checkPalindromeBtn" onclick="checkPalindromeOutput()">Check Palindrome</button>
+                        </form>
+                    </div>
+                    <p id="checkPalindromeOutput" class="scriptOutput"></p>
+                </div>
+            </section>
+            <section id="bill" class="question">
+                <div class="text-center container">
+                    <h2 class="penumbra light-font">Bill Total</h2>
+                    <div class="fields">
+                        <form name="bill">
+                            <input type="text" placeholder="Enter subtotal amount" id="subTotalInput">
+                            <input type="text" placeholder="Enter tip percentage" id="tipInput">
+                            <button type="button" id="totalBillBtn" onclick="return calcSubTotalBill()">Total Bill</button>
+                        </form>
+                    </div>
+                    <p id="subTotalOutput" class="scriptOutput"></p>
+                </div>
+            </section>
+        </div>
+    </section>
+    <footer class="font-roboto text-center">
+        &copy VENKATA SAI RAHUL SUNKARI 2023
+    </footer>
+    <script src="index.js"></script>
 </body>
 </html>
