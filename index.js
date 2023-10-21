@@ -1,3 +1,33 @@
+// Enter key event listener
+document.getElementById("reverseStringInput").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("reverseStringBtn").click();
+    }
+});
+
+document.getElementById("checkPalindromeInput").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("checkPalindromeBtn").click();
+    }
+});
+
+document.getElementById("subTotalInput").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("totalBillBtn").click();
+    }
+});
+
+document.getElementById("tipInput").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        document.getElementById("totalBillBtn").click();
+    }
+});
+
+// Reverse String Functions
 function reverseString(str) {
     const len = str.length;
     let newString = "";
@@ -8,6 +38,13 @@ function reverseString(str) {
     return newString;
 }
 
+function reverseStringDisplay() {
+    let input = document.getElementById("reverseStringInput").value;
+    let result = reverseString(input);
+    document.getElementById("reverseStringOutput").innerHTML = "Reversed string is: " + result;
+}
+
+// Check Palindrome Function
 function checkPalindrome(input) {
     const inp = input.toString();
     len = inp.length;
@@ -26,22 +63,17 @@ function checkPalindrome(input) {
     }
 }
 
-function totalBill(subtotal, tip) {
-    subtotal = parseInt(subtotal);
-    tip = parseFloat(tip);
-    return (subtotal +(subtotal*tip/100));
-}
-
-function reverseStringDisplay() {
-    let input = document.getElementById("reverseStringInput").value;
-    let result = reverseString(input);
-    document.getElementById("reverseStringOutput").innerHTML = "Reversed string is: " + result;
-}
-
 function checkPalindromeOutput() {
     let input = document.getElementById("checkPalindromeInput").value;
     let result = checkPalindrome(input);
     document.getElementById("checkPalindromeOutput").innerHTML = result;
+}
+
+// Calculate Total Bill Functions
+function totalBill(subtotal, tip) {
+    subtotal = parseInt(subtotal);
+    tip = parseFloat(tip);
+    return (subtotal +(subtotal*tip/100));
 }
 
 function calcSubTotalBill() {

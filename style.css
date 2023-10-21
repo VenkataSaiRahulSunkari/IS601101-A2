@@ -42,30 +42,31 @@ body {
 }
 
 .fields {
-    padding-top: 10rem;
+    font-size: 32px;
 }
 
 .layout {
     width: 100%;
-    height: 60vh;
-  
+    height: 85vh;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
 
     justify-content: space-evenly;
-    align-items: center;
+    align-items: top;
 }
 
 h1 {
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 36px;
+    margin: 0;
 }
-
 
 .title {
     color: #363062;
+    height: 10vh;
 }
 
 .container {
@@ -77,4 +78,17 @@ button:hover {
     transition-duration: 0.3s;
     color: #363062;
     background-color: #F99417;
+}
+
+.scriptOutput {
+    color: #F5F5F5;
+}
+
+footer {
+    height: 5vh;
+    background-color: #4D4C7D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F5F5F5;
 }
